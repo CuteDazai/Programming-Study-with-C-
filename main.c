@@ -1,3 +1,4 @@
+//재귀함수를 연습해보자! 1 부터 n까지 출력하는 함수
 #include <stdio.h>
 
 void PrintNum(int num){
