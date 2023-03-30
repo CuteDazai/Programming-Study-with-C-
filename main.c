@@ -1,15 +1,17 @@
-//재귀함수를 연습해보자! 1 부터 n까지 출력하는 함수
+//재귀함수를 연습해보자! 백준 2747번 피보나치 수
 #include <stdio.h>
 
-void PrintNum(int num){
-  printf("%d ", num);
-  if(num%10==0)printf("\n");
-  if(num>1) PrintNum(num-1);
+int Fibo(int num)
+{
+  else if (num==3) return 2;
+  else if (num==2) return 1;
+  else return Fibo(num-1)+Fibo(num-2);
 }
 int main(void) {
   int num;
-  printf("From 1 to what number do you want to me to print?: ");
   scanf("%d", &num);
-  PrintNum(num);
+  printf("%d",Fibo(num));
   return 0;
 }
+
+//시간초과가 뜬다...
