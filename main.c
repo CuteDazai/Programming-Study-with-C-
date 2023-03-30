@@ -1,17 +1,10 @@
-//재귀함수를 연습해보자! 백준 2747번 피보나치 수
+// 백준 11382번 꼬마정민 입력과 계산
 #include <stdio.h>
 
-int Fibo(int num)
-{
-  else if (num==3) return 2;
-  else if (num==2) return 1;
-  else return Fibo(num-1)+Fibo(num-2);
-}
 int main(void) {
-  int num;
-  scanf("%d", &num);
-  printf("%d",Fibo(num));
-  return 0;
+  long long a, b, c;    // int 보다 큰 숫자를 받을 수 있도록 하자
+                        // (longlong 8byte)
+  scanf("%lld %lld %lld", &a, &b, &c);
+  printf("%lld",a+b+c);
 }
 
-//시간초과가 뜬다...
